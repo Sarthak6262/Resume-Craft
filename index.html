@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Craft — Professional ATS-Friendly Resume Builder</title>
+  <meta name="description" content="Build an ATS-friendly, professionally designed resume in minutes with Resume Craft. Free, online, no registration required. Download instant PDF.">
+  <meta name="keywords" content="Resume Builder, ATS Resume, Free Resume Maker, PDF Resume, Professional Resume Templates, CV Maker">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Client-side PDF Library CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <div class="logo-icon"><i class="fas fa-file-invoice"></i></div>
+        <span>Resume Craft</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#builder-section" class="nav-link">Resume Builder</a>
+        <a href="#templates" class="nav-link">Templates</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#ats-checker" class="nav-link">ATS Checker</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#builder-section" class="btn btn-primary btn-sm">Build My Resume</a>
+      </nav>
+
+      <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge mb-3"><i class="fas fa-bolt"></i> 100% Free & ATS-Friendly</span>
+        <h1>Create a Professional Resume That <span class="gradient-text">Gets Noticed</span></h1>
+        <p>Build an ATS-friendly, professionally designed resume in minutes using our easy-to-use resume builder. No login or registration required.</p>
+        
+        <div class="hero-ctas">
+          <a href="#builder-section" class="btn btn-primary btn-lg"><i class="fas fa-file-invoice"></i> Create My Resume</a>
+          <a href="#templates" class="btn btn-secondary btn-lg"><i class="fas fa-layer-group"></i> Explore Templates</a>
+        </div>
+
+        <div class="hero-badges">
+          <span class="badge"><i class="fas fa-check-circle text-success"></i> ATS Friendly</span>
+          <span class="badge"><i class="fas fa-check-circle text-success"></i> Professional Templates</span>
+          <span class="badge"><i class="fas fa-check-circle text-success"></i> Instant Preview</span>
+          <span class="badge"><i class="fas fa-check-circle text-success"></i> PDF Download</span>
+          <span class="badge"><i class="fas fa-check-circle text-success"></i> No Account Required</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="mockup-card">
+          <div class="mockup-header">
+            <div>
+              <div class="mockup-name">RAHUL SHARMA</div>
+              <div class="mockup-title">SENIOR FRONTEND DEVELOPER</div>
+            </div>
+            <span class="badge" style="background: #10b981; color: white;"><i class="fas fa-shield-alt"></i> 95/100 ATS</span>
+          </div>
+          <div class="mockup-bar primary w-90"></div>
+          <div class="mockup-bar w-75"></div>
+          <div class="mockup-bar w-50"></div>
+          <div class="mockup-bar primary w-90"></div>
+          <div class="mockup-bar w-75"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURES SECTION ==================== -->
+  <section class="section-padding" id="features">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Designed to Help You Get Hired</h2>
+        <p>Everything you need to create a modern, recruitment-compliant resume without hassle.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-robot"></i></div>
+          <h3>ATS-Friendly Formatting</h3>
+          <p>Clean structures, standard section titles, and typography that Applicant Tracking Systems can parse flawlessly.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-palette"></i></div>
+          <h3>Professional Templates</h3>
+          <p>Switch between Classic ATS, Modern, Minimalist, and Executive styles with a single click.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-eye"></i></div>
+          <h3>Live Real-Time Preview</h3>
+          <p>See changes instantly on an A4 page canvas as you type your personal details and achievements.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-file-pdf"></i></div>
+          <h3>Instant PDF Export</h3>
+          <p>Download clean, high-resolution vector PDF resumes formatted ready for job applications.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-edit"></i></div>
+          <h3>Easy Dynamic Editing</h3>
+          <p>Add, edit, reorder, or delete work experiences, education degrees, skills, and projects seamlessly.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+          <h3>100% Private & Local</h3>
+          <p>No account required. Your data remains stored exclusively in your browser local storage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HOW IT WORKS SECTION ==================== -->
+  <section class="section-padding how-it-works-bg">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Create Your Resume in 3 Simple Steps</h2>
+        <p>Follow our quick workflow to build a job-winning resume in minutes.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3>Enter Your Information</h3>
+          <p>Fill in your contact details, work experience, education, projects, and technical skills into the form.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3>Choose Your Template</h3>
+          <p>Select from 4 professionally crafted templates and customize fonts, sizes, and line spacing.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3>Download Your Resume</h3>
+          <p>Check your live ATS compatibility score, fine-tune suggestions, and download as PDF or print.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TEMPLATE PREVIEW GALLERY ==================== -->
+  <section class="section-padding" id="templates">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Professional Resume Templates</h2>
+        <p>Pick a template that matches your career level and target industry.</p>
+      </div>
+
+      <div class="template-grid">
+        <!-- Template 1: Academic ATS (Divider Lines) -->
+        <div class="template-card">
+          <div class="template-thumbnail">
+            <div class="mini-preview">
+              <div class="mini-preview-header" style="text-align: center; border-bottom: 1.5px solid #0f172a; padding-bottom: 2px; margin-bottom: 4px;">
+                <div class="mini-title" style="font-weight: 800; font-size: 0.7rem; letter-spacing: 0.5px;">SARTHAK WAKCHAURE</div>
+                <div class="mini-subtitle" style="font-size: 0.5rem; color: #475569;">9834375622 | sarthak@gmail.com | Pune</div>
+              </div>
+              <div style="border-top: 1px solid #0f172a; margin-top: 3px; padding-top: 2px;">
+                <div class="mini-line" style="height: 3px; background: #0f172a; width: 45%; margin-bottom: 3px;"></div>
+                <div class="mini-line"></div>
+                <div class="mini-line short"></div>
+              </div>
+              <div style="border-top: 1px solid #0f172a; margin-top: 3px; padding-top: 2px;">
+                <div class="mini-line" style="height: 3px; background: #0f172a; width: 35%; margin-bottom: 3px;"></div>
+                <div class="mini-line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="template-info">
+            <h3>Academic ATS (Divider Lines)</h3>
+            <p>Single-column layout with top section divider lines & clear hierarchy, ideal for freshers, engineers, and academic roles.</p>
+            <button type="button" class="btn btn-outline" onclick="selectTemplate('academic')">Use Template</button>
+          </div>
+        </div>
+
+        <!-- Template 2: Classic ATS -->
+        <div class="template-card">
+          <div class="template-thumbnail">
+            <div class="mini-preview">
+              <div class="mini-preview-header" style="text-align: center;">
+                <div class="mini-title">JOHN DOE</div>
+                <div class="mini-subtitle">SOFTWARE ENGINEER</div>
+              </div>
+              <div class="mini-line"></div>
+              <div class="mini-line short"></div>
+              <div class="mini-line"></div>
+            </div>
+          </div>
+          <div class="template-info">
+            <h3>Classic ATS</h3>
+            <p>Traditional, clean, black-and-white layout engineered for maximum ATS readability.</p>
+            <button type="button" class="btn btn-outline" onclick="selectTemplate('classic')">Use Template</button>
+          </div>
+        </div>
+
+        <!-- Template 2: Modern Professional -->
+        <div class="template-card">
+          <div class="template-thumbnail">
+            <div class="mini-preview">
+              <div class="mini-preview-header" style="border-left: 2px solid var(--primary); padding-left: 4px;">
+                <div class="mini-title">JANE SMITH</div>
+                <div class="mini-subtitle">PRODUCT DESIGNER</div>
+              </div>
+              <div class="mini-line"></div>
+              <div class="mini-line"></div>
+              <div class="mini-line short"></div>
+            </div>
+          </div>
+          <div class="template-info">
+            <h3>Modern Professional</h3>
+            <p>Sleek modern accent borders and typography with strong visual hierarchy.</p>
+            <button type="button" class="btn btn-outline" onclick="selectTemplate('modern')">Use Template</button>
+          </div>
+        </div>
+
+        <!-- Template 3: Minimal -->
+        <div class="template-card">
+          <div class="template-thumbnail">
+            <div class="mini-preview">
+              <div class="mini-preview-header">
+                <div class="mini-title" style="font-weight: 300;">ALEX JOHNSON</div>
+                <div class="mini-subtitle" style="color: #64748b;">DATA ANALYST</div>
+              </div>
+              <div class="mini-line short"></div>
+              <div class="mini-line"></div>
+            </div>
+          </div>
+          <div class="template-info">
+            <h3>Minimalist</h3>
+            <p>Elegant white space and minimal lines for creative and technical roles.</p>
+            <button type="button" class="btn btn-outline" onclick="selectTemplate('minimal')">Use Template</button>
+          </div>
+        </div>
+
+        <!-- Template 4: Executive -->
+        <div class="template-card">
+          <div class="template-thumbnail">
+            <div class="mini-preview">
+              <div class="mini-preview-header" style="background: #0f172a; color: white; padding: 4px;">
+                <div class="mini-title" style="color: white;">MARK SPENCER</div>
+                <div class="mini-subtitle" style="color: #cbd5e1;">VP OF ENGINEERING</div>
+              </div>
+              <div class="mini-line"></div>
+              <div class="mini-line"></div>
+            </div>
+          </div>
+          <div class="template-info">
+            <h3>Executive</h3>
+            <p>Corporate-style bold header banner for senior leads and executives.</p>
+            <button type="button" class="btn btn-outline" onclick="selectTemplate('executive')">Use Template</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== RESUME BUILDER SECTION ==================== -->
+  <section class="builder-section" id="builder-section">
+    <div class="container">
+      
+      <!-- Top Action Toolbar -->
+      <div class="builder-card mb-4">
+        <div class="builder-card-header">
+          <h3><i class="fas fa-sliders-h"></i> Builder Actions & Customization</h3>
+          <div class="badge"><i class="fas fa-sync-alt fa-spin"></i> Live Auto-Sync Active</div>
+        </div>
+
+        <div class="controls-row mb-3">
+          <div class="form-group">
+            <label><i class="fas fa-layer-group"></i> Template Style</label>
+            <select id="setting-template">
+              <option value="academic" selected>Academic ATS (Divider Lines)</option>
+              <option value="classic">Classic ATS</option>
+              <option value="modern">Modern Professional</option>
+              <option value="minimal">Minimalist</option>
+              <option value="executive">Executive</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label><i class="fas fa-font"></i> Font Family</label>
+            <select id="setting-font">
+              <option value="inter">Inter (Modern Sans)</option>
+              <option value="arial">Arial (Classic Sans)</option>
+              <option value="calibri">Calibri (Clean)</option>
+              <option value="georgia">Georgia (Serif)</option>
+              <option value="times">Times New Roman (Traditional)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label><i class="fas fa-text-height"></i> Font Size</label>
+            <select id="setting-font-size">
+              <option value="small">Small (13px)</option>
+              <option value="medium" selected>Medium (14.5px)</option>
+              <option value="large">Large (16px)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label><i class="fas fa-arrows-alt-v"></i> Line Spacing</label>
+            <select id="setting-line-spacing">
+              <option value="compact">Compact</option>
+              <option value="normal" selected>Normal</option>
+              <option value="spacious">Spacious</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="toolbar-grid">
+          <button type="button" class="btn btn-secondary btn-sm" onclick="loadSampleData()"><i class="fas fa-magic"></i> Fill Sample Data</button>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="saveResumeManually()"><i class="fas fa-save"></i> Save Resume</button>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="loadSavedResume()"><i class="fas fa-folder-open"></i> Load Resume</button>
+          <button type="button" class="btn btn-danger btn-sm" onclick="openClearModal()"><i class="fas fa-trash-alt"></i> Clear Data</button>
+          <button type="button" class="btn btn-success btn-sm" onclick="downloadPDF()"><i class="fas fa-file-pdf"></i> Download PDF</button>
+          <button type="button" class="btn btn-secondary btn-sm" style="background: #2563eb; color: #ffffff; border: none;" onclick="downloadWord()"><i class="fas fa-file-word"></i> Download Word (.docx)</button>
+          <button type="button" class="btn btn-primary btn-sm" onclick="printResume()"><i class="fas fa-print"></i> Print Resume</button>
+        </div>
+      </div>
+
+      <!-- Main Two-Column Layout -->
+      <div class="builder-layout">
+        
+        <!-- LEFT COLUMN: Form Inputs -->
+        <div class="builder-form-col">
+          
+          <!-- 1. Personal Information Form -->
+          <div class="builder-card" id="personal-form">
+            <div class="builder-card-header">
+              <h3><i class="fas fa-user-circle"></i> Personal Details</h3>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" data-field="fullName" id="personal-fullname" placeholder="e.g. John Doe">
+              </div>
+              <div class="form-group">
+                <label>Professional Title *</label>
+                <input type="text" data-field="jobTitle" id="personal-title" placeholder="e.g. Frontend Developer">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" data-field="email" id="personal-email" placeholder="john@example.com">
+              </div>
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" data-field="phone" id="personal-phone" placeholder="+1 (555) 000-0000">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Location *</label>
+                <input type="text" data-field="location" id="personal-location" placeholder="e.g. New York, NY">
+              </div>
+              <div class="form-group">
+                <label>LinkedIn URL * <span style="font-size: 0.75rem; color: var(--primary); font-weight: 600;">(Mandatory)</span></label>
+                <input type="url" data-field="linkedin" id="personal-linkedin" placeholder="https://linkedin.com/in/username">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>GitHub URL * <span style="font-size: 0.75rem; color: var(--primary); font-weight: 600;">(Mandatory)</span></label>
+                <input type="url" data-field="github" id="personal-github" placeholder="https://github.com/username">
+              </div>
+              <div class="form-group">
+                <label>Portfolio URL</label>
+                <input type="url" data-field="portfolio" id="personal-portfolio" placeholder="https://yourwebsite.dev">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Profile Summary / Objective</label>
+              <textarea data-field="summary" id="personal-summary" placeholder="Write a compelling 2-3 sentence overview of your career accomplishments, technical strengths, and professional goals..."></textarea>
+            </div>
+          </div>
+
+          <!-- 2. Work Experience Form -->
+          <div class="builder-card">
+            <div class="builder-card-header">
+              <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+              <button type="button" class="btn btn-primary btn-sm" onclick="addExperience()"><i class="fas fa-plus"></i> Add Experience</button>
+            </div>
+            <div id="experience-container"></div>
+          </div>
+
+          <!-- 3. Education Form -->
+          <div class="builder-card">
+            <div class="builder-card-header">
+              <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+              <button type="button" class="btn btn-primary btn-sm" onclick="addEducation()"><i class="fas fa-plus"></i> Add Education</button>
+            </div>
+            <div id="education-container"></div>
+          </div>
+
+          <!-- 4. Projects Form -->
+          <div class="builder-card">
+            <div class="builder-card-header">
+              <h3><i class="fas fa-project-diagram"></i> Projects</h3>
+              <button type="button" class="btn btn-primary btn-sm" onclick="addProject()"><i class="fas fa-plus"></i> Add Project</button>
+            </div>
+            <div id="projects-container"></div>
+          </div>
+
+          <!-- 5. Skills Form -->
+          <div class="builder-card">
+            <div class="builder-card-header">
+              <h3><i class="fas fa-tools"></i> Skills</h3>
+            </div>
+            
+            <div class="skills-input-wrapper">
+              <input type="text" id="skill-input" placeholder="Type a skill (e.g. React) and press Enter or Click Add">
+              <button type="button" class="btn btn-primary btn-sm" id="add-skill-btn">+ Add Skill</button>
+            </div>
+
+            <div class="skills-chips-container" id="skills-chips-container"></div>
+
+            <!-- Keyword Suggester Box -->
+            <div style="margin-top: 1.25rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+              <label><i class="fas fa-lightbulb text-warning"></i> Suggested Keywords (Click to add):</label>
+              <div class="keyword-chips" id="keyword-chips-container"></div>
+            </div>
+          </div>
+
+          <!-- 6. Certifications Form -->
+          <div class="builder-card">
+            <div class="builder-card-header">
+              <h3><i class="fas fa-certificate"></i> Certifications</h3>
+              <button type="button" class="btn btn-primary btn-sm" onclick="addCertification()"><i class="fas fa-plus"></i> Add Certification</button>
+            </div>
+            <div id="certifications-container"></div>
+          </div>
+
+          <!-- 7. Languages Form -->
+          <div class="builder-card">
+            <div class="builder-card-header">
+              <h3><i class="fas fa-language"></i> Languages</h3>
+              <button type="button" class="btn btn-primary btn-sm" onclick="addLanguage()"><i class="fas fa-plus"></i> Add Language</button>
+            </div>
+            <div id="languages-container"></div>
+          </div>
+
+          <!-- 8. Achievements Form -->
+          <div class="builder-card">
+            <div class="builder-card-header">
+              <h3><i class="fas fa-trophy"></i> Key Achievements</h3>
+              <button type="button" class="btn btn-primary btn-sm" onclick="addAchievement()"><i class="fas fa-plus"></i> Add Achievement</button>
+            </div>
+            <div id="achievements-container"></div>
+          </div>
+
+          <!-- ATS Checker Widget -->
+          <div class="builder-card" id="ats-checker">
+            <div class="builder-card-header">
+              <h3><i class="fas fa-shield-alt text-primary"></i> Basic ATS Compatibility Check</h3>
+            </div>
+
+            <div class="ats-score-box">
+              <div class="score-circle" id="ats-score-circle">
+                <div class="score-circle-inner" id="ats-score-text">0</div>
+              </div>
+              <div class="ats-details">
+                <h4>ATS Compatibility Score</h4>
+                <p>Based on formatting structure, contact completeness, and key sections.</p>
+              </div>
+            </div>
+
+            <div class="ats-checks-list" id="ats-checks-list"></div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: Live A4 Resume Paper Preview -->
+        <div class="builder-preview-col">
+          <div class="preview-sticky-wrapper">
+            <div class="preview-toolbar-top">
+              <span class="preview-title"><i class="fas fa-eye text-primary"></i> Live A4 Resume Preview</span>
+              <div class="preview-quick-actions" style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                <button type="button" class="btn btn-success btn-sm" onclick="downloadPDF()"><i class="fas fa-file-pdf"></i> PDF</button>
+                <button type="button" class="btn btn-secondary btn-sm" style="background: #2563eb; color: #ffffff; border: none;" onclick="downloadWord()"><i class="fas fa-file-word"></i> Word (.docx)</button>
+                <button type="button" class="btn btn-primary btn-sm" onclick="printResume()"><i class="fas fa-print"></i> Print</button>
+              </div>
+            </div>
+
+            <div class="paper-scroll-box" id="resume-paper-container">
+              <div class="resume-paper template-classic font-inter size-medium spacing-normal" id="resume-paper">
+                <!-- Dynamically rendered via JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ SECTION ==================== -->
+  <section class="section-padding" id="faq">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about building your resume with ResumeCraft.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h3><i class="fas fa-question-circle text-primary"></i> Is ResumeCraft completely free?</h3>
+          <p>Yes! ResumeCraft is 100% free with no account registration, hidden fees, or subscriptions required.</p>
+        </div>
+
+        <div class="faq-card">
+          <h3><i class="fas fa-question-circle text-primary"></i> Are these resumes really ATS-friendly?</h3>
+          <p>Yes. All 4 templates are designed using standard single-column or clean two-column structures, readable standard fonts, and semantic headers that ATS parsers can read seamlessly.</p>
+        </div>
+
+        <div class="faq-card">
+          <h3><i class="fas fa-question-circle text-primary"></i> Is my personal information safe?</h3>
+          <p>Absolutely. ResumeCraft runs 100% client-side in your web browser. None of your personal data is sent to external servers. It stays safely in your browser's local storage.</p>
+        </div>
+
+        <div class="faq-card">
+          <h3><i class="fas fa-question-circle text-primary"></i> How do I download my resume as PDF?</h3>
+          <p>Click the "Download PDF" button in the builder action toolbar. Our client-side rendering engine converts your live preview directly into an A4 PDF document.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <div class="logo-icon"><i class="fas fa-file-invoice"></i></div>
+            <span>Resume Craft</span>
+          </a>
+          <p>Build professional, ATS-friendly resumes in minutes. Stand out to recruiters and get hired faster.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#builder-section">Resume Builder</a>
+            <a href="#templates">Templates</a>
+            <a href="#features">Features</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tools</h4>
+          <div class="footer-links">
+            <a href="#ats-checker">ATS Compatibility Check</a>
+            <a href="#builder-section">PDF Export</a>
+            <a href="#builder-section">Keyword Suggester</a>
+            <a href="#faq">FAQ</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Privacy & Hosting</h4>
+          <div class="footer-links">
+            <a href="#">Client-Side Only</a>
+            <a href="#">LocalStorage Powered</a>
+            <a href="#">GitHub Pages Compatible</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ResumeCraft. Built with HTML5, CSS3 &amp; Vanilla JavaScript. Designed for GitHub Pages.</p>
+        <p class="footer-developer" style="margin-top: 0.5rem; color: #cbd5e1; font-weight: 500; font-size: 0.9rem;">
+          Developed By Sarthak Wakchaure | Contact: <a href="tel:9834375622" style="color: #ffffff; text-decoration: underline;">9834375622</a> | Email: <a href="mailto:sarthakwakchaure2058@gmail.com" style="color: #ffffff; text-decoration: underline;">sarthakwakchaure2058@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS & TOAST CONTAINERS ==================== -->
+
+  <!-- Clear Confirmation Modal -->
+  <div class="modal-overlay" id="clear-modal">
+    <div class="modal-card">
+      <h3><i class="fas fa-exclamation-triangle text-danger"></i> Clear All Resume Data?</h3>
+      <p>Are you sure you want to clear your entire resume? This action will erase all entered fields and local storage entries and cannot be undone.</p>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-secondary" onclick="closeClearModal()">Cancel</button>
+        <button type="button" class="btn btn-danger" onclick="confirmClearResume()">Clear Resume</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master JavaScript Application -->
+  <script src="js/script.js"></script>
+</body>
+</html>
